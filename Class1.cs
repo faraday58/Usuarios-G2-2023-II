@@ -8,6 +8,13 @@ namespace Usuarios_G2_2023_II
         private string usuario;
         private string password;
 
+        public Persona(string usuario, string password)
+        {
+            Usuario = usuario;
+            Password = password;
+        }
+
+        #region Propiedades
         public string Usuario {
             get => usuario;
             set {
@@ -36,6 +43,8 @@ namespace Usuarios_G2_2023_II
                 }                
             }
         }
+        #endregion
+
 
     }
 
@@ -50,7 +59,8 @@ namespace Usuarios_G2_2023_II
 
         public void Generar()
         {
-           // usuarios.Add(new   );
+            usuarios.Add(new Persona("armando","armando123"));
+            usuarios.Add(new Persona("jorge", "jorge123"));
         }
 
     }
